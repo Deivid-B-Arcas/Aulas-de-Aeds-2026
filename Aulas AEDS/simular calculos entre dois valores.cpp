@@ -1,39 +1,44 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main(){
 
-    float a, b;
+    float A, B;
 
     cout << "Digite os dois numeros: " << endl;
-    cin >> a;
-    cin >> b;
+    cin >> A;
+  cin >> B;
 
     char operador;
 
-    cout << "Digite o operador desejado: " << endl;
+    cout << "os operadores sao / para divisao, * para multiplicacao, + para adicao e - para subtracao, agora escolha o operador desejado: ";
     cin >> operador;
-    
-    while (true){     
-    
+   
+    if (A != 0 && B != 0 ){
+        
     switch (operador){
-    case '/':
-    cout << a / b;
-        break;
-    cout << a * b;
-    case '*':
-        break;
-    cout << a + b;    
-    case '+':
-        break;    
-
-    case '-':
-        break;   
-    cout << a - b;     
-
-    default:
-        break;
-    }
+        case '/':
+        cout << A / B;
+            break;
+            
+        case '*':
+        cout << A * B;
+            break;
+             
+        case '+':
+        cout << A + B; 
+            break;
+        
+        case '-':
+        cout << A - B;
+            break;   
+                 
+        
+            default:
+            break;
+        }
+    } else{
+       return 0; 
   }
+
 }
